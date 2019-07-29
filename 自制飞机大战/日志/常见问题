@@ -1,0 +1,12 @@
+1.pygame创建窗口后窗口未响应，或pygame 窗口每次无法正常关闭
+解决办法  while True:
+ 
+......
+    
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            pygame.quit()
+2.文件打开失效
+
+解决办法 图片复制到当前文件夹下面，这样方便
+使用相对路径
